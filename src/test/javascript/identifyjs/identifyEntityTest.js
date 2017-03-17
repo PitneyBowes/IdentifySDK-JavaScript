@@ -13,7 +13,7 @@
 describe("Identify Entity Test Suite: extractEntities", function(){
 	var IE;	
 	beforeEach(function() {
-		IE = new IDENTIFYAPIS.identifyEntity('46MJx5WgvH9S6MNzDV6ZNOt6fU0x'); //PUT TOKEN HERE
+		IE = new IDENTIFYAPIS.identifyEntity('<access token>'); //PUT TOKEN HERE
 	});
 	
 	it("Identify Entity test batch size should not be more than 1 json", function () {
