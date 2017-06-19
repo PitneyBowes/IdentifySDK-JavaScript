@@ -13,7 +13,7 @@
 describe("Identify Email Test Suite: validateEmailAddress", function(){
 	var IA;
 	beforeEach(function() {
-		IA = new IDENTIFYAPIS.identifyEmail('<access token>'); //PUT TOKEN HERE
+		IA = new IDENTIFYAPIS.identifyEmail('<access_token>'); //PUT TOKEN HERE
 	});
     it("Identify Email test json validate email", function () {
         var identifyEmail = IA.validateEmailAddress('{"options": {},"Input": {"Row": [{"emailAddress": "bgates@microsoft.com"}]}}');
@@ -21,7 +21,9 @@ describe("Identify Email Test Suite: validateEmailAddress", function(){
 		expect(identifyEmail.httpResponse.status).toEqual(200);
     });
 	 it("Identify Email test json empty validate email", function () {
-        expect( function(){ IA.validateEmailAddress(''); } ).toThrow(new Error("PostData is of invalid type, it should be either json or xml."));
+        var identifyEmail = IA.validateEmailAddress('');
+        expect(identifyEmail).not.toBeNull();
+		expect(identifyEmail.httpResponse.status).toEqual(500);
     });
 	it("Identify Email test json batch validate email", function () {
 		var identifyEmail = IA.validateEmailAddress('{ "options": {},  "Input": {"Row": [{"rtc": "true", "bogus": "true","role": "","emps": "","fccwireless": "", "language": "",  "complain": "", "disposable": "", "atc": "","emailAddress": "bgates@microsoft.com", "rtc_timeout": "",  "user_fields":[ {"name": "User1", "value": "Value1" }  ] }, {"rtc": "false", "bogus": "false","role": "", "emps": "", "fccwireless": "", "language": "","complain": "", "disposable": "",  "atc": "", "emailAddress": "bgates@microsoft.com", "rtc_timeout": "","user_fields":[{  "name": "User1", "value": "Value1" } ]}]}}');
@@ -54,21 +56,6 @@ describe("Identify Email Test Suite: validateEmailAddress", function(){
 		expect(identifyEmail.httpResponse.status).toEqual(401);
     });
 	it("Identify Email test invalid token xml", function () {
-	var identifyEmail = IA.validateEmailAddress('<ValidateEmailAddressAPIRequest> <Input> <Row><emailAddress>VS@addresstest.com</emailAddress> </Row><Row><emailAddress>Sandhya.gupta@pb.com</emailAddress> </Row></Input></ValidateEmailAddressAPIRequest>');
-	expect(identifyEmail.httpResponse.status).toEqual(401);
-	});
-});
-
-describe("Identify Email Test Suite: validateEmailAddress", function(){
-	var IA;
-	beforeEach(function() {
-		IA = new IDENTIFYAPIS.identifyEmail('1JKtEcusTbZX7YHe1qroE66uVzJs');//testing expired token
-	});
-    it("Identify Email test expired token json", function () {
-        var identifyEmail = IA.validateEmailAddress('{ "options":{},"Input": {"Row": [ {  "emailAddress": "bgates@microsoft.com"}]}}');
-		expect(identifyEmail.httpResponse.status).toEqual(401);
-    });
-	it("Identify Email test expired token xml", function () {
 	var identifyEmail = IA.validateEmailAddress('<ValidateEmailAddressAPIRequest> <Input> <Row><emailAddress>VS@addresstest.com</emailAddress> </Row><Row><emailAddress>Sandhya.gupta@pb.com</emailAddress> </Row></Input></ValidateEmailAddressAPIRequest>');
 	expect(identifyEmail.httpResponse.status).toEqual(401);
 	});

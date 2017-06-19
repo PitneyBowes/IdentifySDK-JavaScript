@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Class: baseService</title>
+    <title>JSDoc: Class: identifyAddress</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Class: baseService</h1>
+    <h1 class="page-title">Class: identifyAddress</h1>
 
     
 
@@ -29,7 +29,7 @@
 <header>
     
         <h2>
-            <span class="ancestors"><a href="global.html#IDENTIFYAPIS">IDENTIFYAPIS</a>.</span>baseService</h2>
+            <span class="ancestors"><a href="global.html#IDENTIFYAPIS">IDENTIFYAPIS</a>.</span>identifyAddress</h2>
         
     
 </header>
@@ -41,14 +41,14 @@
 
     
 
-    <h4 class="name" id="baseService"><span class="type-signature"></span>new baseService<span class="signature">()</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="identifyAddress"><span class="type-signature"></span>new identifyAddress<span class="signature">()</span><span class="type-signature"></span></h4>
 
     
 
 
 
 <div class="description">
-    A baseService object
+    An identifyAddress object
 </div>
 
 
@@ -136,14 +136,14 @@
 
     
 
-    <h4 class="name" id="callJsonApi"><span class="type-signature"></span>callJsonApi<span class="signature">(apiUrl, postData)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="getCityStateProvince"><span class="type-signature"></span>getCityStateProvince<span class="signature">(postData, callback)</span><span class="type-signature"></span></h4>
 
     
 
 
 
 <div class="description">
-    Call Json API URL and set response property
+    Set API URL to post forward getCityStateProvince, it will call corresponding url(xml or json) based on type of postData(input request body)
 </div>
 
 
@@ -175,178 +175,6 @@
     </thead>
 
     <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>apiUrl</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">input api url</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>postData</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">input address data</td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-            
-
-    
-
-    <h4 class="name" id="callJsonApiAsync"><span class="type-signature"></span>callJsonApiAsync<span class="signature">(apiUrl, postData, callback)</span><span class="type-signature"></span></h4>
-
-    
-
-
-
-<div class="description">
-    Call Json API URL asynchronously and set response property
-</div>
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>apiUrl</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">relative apiUrl</td>
-        </tr>
-
     
 
         <tr>
@@ -390,7 +218,7 @@
 
             
 
-            <td class="description last">callback method name</td>
+            <td class="description last">method name (optional)</td>
         </tr>
 
     
@@ -449,6 +277,16 @@
 
 
 
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    response object or calls callback
+</div>
+
+
+
+    
 
 
 
@@ -457,14 +295,14 @@
 
     
 
-    <h4 class="name" id="callXmlApi"><span class="type-signature"></span>callXmlApi<span class="signature">(apiUrl, postData)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="validateMailingAddress"><span class="type-signature"></span>validateMailingAddress<span class="signature">(postData, callback)</span><span class="type-signature"></span></h4>
 
     
 
 
 
 <div class="description">
-    Call API URL and set response property
+    Set API URL to post forward validateMailingAddress, it will call corresponding url(xml or json) based on type of postData(input request body)
 </div>
 
 
@@ -496,178 +334,6 @@
     </thead>
 
     <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>apiUrl</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">relative apiUrl</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>postData</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">input address data</td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-            
-
-    
-
-    <h4 class="name" id="callXmlApiAsync"><span class="type-signature"></span>callXmlApiAsync<span class="signature">(apiUrl, postData, callback)</span><span class="type-signature"></span></h4>
-
-    
-
-
-
-<div class="description">
-    Call API URL and set response property
-</div>
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>apiUrl</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">relative apiUrl</td>
-        </tr>
-
     
 
         <tr>
@@ -711,7 +377,7 @@
 
             
 
-            <td class="description last">callback method name</td>
+            <td class="description last">method name (optional)</td>
         </tr>
 
     
@@ -770,6 +436,334 @@
 
 
 
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    response object or calls callback
+</div>
+
+
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="validateMailingAddressPremium"><span class="type-signature"></span>validateMailingAddressPremium<span class="signature">(postData, callback)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    Set API URL to post forward validateMailingAddressPremium, it will call corresponding url(xml or json) based on type of postData(input request body)
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>postData</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">request body</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">method name (optional)</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    response object or calls callback
+</div>
+
+
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="validateMailingAddressPro"><span class="type-signature"></span>validateMailingAddressPro<span class="signature">(postData, callback)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    Set API URL to post forward validateMailingAddressPro, it will call corresponding url(xml or json) based on type of postData(input request body)
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>postData</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">request body</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">method name (optional)</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    response object or calls callback
+</div>
+
+
+
+    
 
 
 
@@ -789,13 +783,13 @@
 </div>
 
 <nav>
-    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="IDENTIFYAPIS.baseService.html">baseService</a></li><li><a href="IDENTIFYAPIS.identifyAddress.html">identifyAddress</a></li><li><a href="IDENTIFYAPIS.identifyEmail.html">identifyEmail</a></li><li><a href="IDENTIFYAPIS.identifyRisk.html">identifyRisk</a></li></ul><h3>Global</h3><ul><li><a href="global.html#IDENTIFYAPIS">IDENTIFYAPIS</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="IDENTIFYAPIS.baseService.html">baseService</a></li><li><a href="IDENTIFYAPIS.identifyAddress.html">identifyAddress</a></li><li><a href="IDENTIFYAPIS.identifyEmail.html">identifyEmail</a></li><li><a href="IDENTIFYAPIS.identifyEntity.html">identifyEntity</a></li><li><a href="IDENTIFYAPIS.identifyRisk.html">identifyRisk</a></li></ul><h3>Global</h3><ul><li><a href="global.html#IDENTIFYAPIS">IDENTIFYAPIS</a></li></ul>
 </nav>
 
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.2</a> on Wed Oct 26 2016 18:28:06 GMT+0530 (India Standard Time)
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.3</a> on Fri Apr 21 2017 16:42:04 GMT+0530 (India Standard Time)
 </footer>
 
 <script> prettyPrint(); </script>

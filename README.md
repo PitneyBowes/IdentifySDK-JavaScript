@@ -7,21 +7,21 @@
 
 ### Identify APIs:
 
-* [IdentifyAddress](https://developer2.pitneybowes.com/en/identifyaddress.php) :  Eliminate errors in address data, improve customer experience. IdentifyAddress makes communication easier, faster and effortless by enriching customer details, keeping it up-to-date and maintaining its accuracy and consistency. It eliminates redundancy in reaching out to customers and makes it easy for distinct functional areas to work seamlessly in improving customer relationship.
+* [IdentifyAddress](http://identify.pitneybowes.com/identifyaddress) :  Eliminate errors in address data, improve customer experience. IdentifyAddress makes communication easier, faster and effortless by enriching customer details, keeping it up-to-date and maintaining its accuracy and consistency. It eliminates redundancy in reaching out to customers and makes it easy for distinct functional areas to work seamlessly in improving customer relationship.
 
-* [IdentifyRisk](https://developer2.pitneybowes.com/en/identifyrisk.php) : Know your customers’ credibility while onboarding new customers or conducting business transactions. IdentifyRisk consolidates data from numerous sources on your customer into a single, comprehensive customer record, and compares this against exhaustive government watch lists for financial and legal sanctions to help ensure compliance with your Anti-Money Laundering (AML) and Know Your Customer (KYC) obligations.
+* [IdentifyRisk](http://identify.pitneybowes.com/identifyrisk) : Know your customers’ credibility while onboarding new customers or conducting business transactions. IdentifyRisk consolidates data from numerous sources on your customer into a single, comprehensive customer record, and compares this against exhaustive government watch lists for financial and legal sanctions to help ensure compliance with your Anti-Money Laundering (AML) and Know Your Customer (KYC) obligations.
 
-* [IdentifyEmail](https://developer2.pitneybowes.com/en/identifyemail.php): Corrects and validates your email addresses to protect your database from invalid, toxic and undesirable email addresses. We help you avoid a damaged sender reputations by flagging those bouncing emails, spamtrap hits, honeypots, stale lists and do-not-contact list before you have a chance to use them.
+* [IdentifyEmail](http://identify.pitneybowes.com/identifyemail): Corrects and validates your email addresses to protect your database from invalid, toxic and undesirable email addresses. We help you avoid a damaged sender reputations by flagging those bouncing emails, spamtrap hits, honeypots, stale lists and do-not-contact list before you have a chance to use them.
 
-* [IdentifyEntity](https://developer2.pitneybowes.com/en/identifyentity.php): Gain better insight into your customers and their circumstances. IdentifyEntity extracts and identifies entities (distinct pieces of identifiable information such as personal names, business names, mailing address, email address, phone number, etc) from input text so your business has more information to make smarter decisions.
+* [IdentifyEntity](http://identify.pitneybowes.com/identifyentity): Gain better insight into your customers and their circumstances. IdentifyEntity extracts and identifies entities (distinct pieces of identifiable information such as personal names, business names, mailing address, email address, phone number, etc) from input text so your business has more information to make smarter decisions.
 
 The following platforms are supported by Identify SDKs:
-*	[Android](https://developer2.pitneybowes.com/docs/identify/v1/en/webhelp_REST/index.html#CustomerInformationManagementAPI/source/SDK/AndroidSDK/AndroidIntro.html)
-*	[JavaScript](https://developer2.pitneybowes.com/docs/identify/v1/en/webhelp_REST/index.html#CustomerInformationManagementAPI/source/SDK/JavaScriptSDK/JavaScriptIntro.html) 
-*	[Java](https://developer2.pitneybowes.com/docs/identify/v1/en/webhelp_REST/index.html#CustomerInformationManagementAPI/source/SDK/JavaSDK/java_intro.html)
-*	[C#](https://developer2.pitneybowes.com/docs/identify/v1/en/webhelp_REST/index.html#CustomerInformationManagementAPI/source/SDK/CSharpSDK/CSharp_Intro.html)  
+*	[Android](http://identify.pitneybowes.com/docs/identify/v1/en/rest/index.html#CustomerInformationManagementAPI/source/SDK/AndroidSDK/AndroidIntro.html)
+*	[JavaScript](http://identify.pitneybowes.com/docs/identify/v1/en/rest/index.html#CustomerInformationManagementAPI/source/SDK/JavaScriptSDK/JavaScriptIntro.html) 
+*	[Java](http://identify.pitneybowes.com/docs/identify/v1/en/rest/index.html#CustomerInformationManagementAPI/source/SDK/JavaSDK/java_intro.html)
+*	[C#](http://identify.pitneybowes.com/docs/identify/v1/en/rest/index.html#CustomerInformationManagementAPI/source/SDK/CSharpSDK/CSharp_Intro.html)  
 
-[Click here](https://developer2.pitneybowes.com/docs/identify/v1/en/webhelp_REST/index.html#) for detailed Documentation on Identify APIs 
+[Click here](http://identify.pitneybowes.com/docs/identify/v1/en/rest/index.html#) for detailed Documentation on Identify APIs 
 
 
 # IdentifySDK-JavaScript
@@ -29,7 +29,7 @@ The following platforms are supported by Identify SDKs:
 IdentifySDK-JavaScript facilitates you to build Web applications using Identify APIs.
 ### Getting Started
 * To get started with JavaScript SDK, you must first register at [Identify API Home Page](http://www.pitneybowes.com/us/developer/customer-data-apis.html) and obtain your API Key and Secret to get started with the JavaScript SDK and call Identify APIs.
- For more information refer to [‘Getting Started with JavaScript SDK’](https://developer2.pitneybowes.com/docs/identify/v1/en/webhelp_REST/index.html#CustomerInformationManagementAPI/source/SDK/JavaScriptSDK/JavaScriptIntro.html) section in documentation.
+ For more information refer to [‘Getting Started with JavaScript SDK’](http://identify.pitneybowes.com/docs/identify/v1/en/rest/index.html#CustomerInformationManagementAPI/source/SDK/JavaScriptSDK/JavaScriptIntro.html) section in documentation.
  
  We need to include following dependencies to start using IdentifySDK-JavaScript 
  
