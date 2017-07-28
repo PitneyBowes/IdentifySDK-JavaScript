@@ -127,6 +127,39 @@ IDENTIFYAPIS.identifyAddress.prototype.validateMailingAddressPremium = function(
 	}
 };
 /**
+ * Set API URL to post forward validateMailingAddressUSCan, it will call corresponding url(xml or json) based on type of postData(input request body)
+ * @param postData {string} request body
+ * @param callback {string} method name (optional)
+ * @return response object or calls callback
+ */
+IDENTIFYAPIS.identifyAddress.prototype.validateMailingAddressUSCan = function(postData, callback){
+	var isJson = this.isJson(postData);
+	if(isJson){
+		var apiUrl = '/identifyaddress/v1/rest/validatemailingaddressuscan/results.json';
+		if(callback !== undefined){
+			this.callJsonApiAsync(apiUrl, postData, callback);
+		}
+		else{
+			this.callJsonApi(apiUrl, postData);
+			return this.response;
+		}
+	}else{
+		var isXml = this.isXml(postData);
+		if(isXml){
+			var apiUrl = '/identifyaddress/v1/rest/validatemailingaddressuscan/results.xml';
+			if(callback !== undefined && callback !== null){
+				this.callXmlApiAsync(apiUrl, postData, callback);
+			}
+			else{
+				this.callXmlApi(apiUrl, postData);
+				return this.response;
+			}
+		}else{
+			throw new Error("PostData is of invalid type, it should be either json or xml.");
+		}
+	}
+};
+/**
  * Set API URL to post forward getCityStateProvince, it will call corresponding url(xml or json) based on type of postData(input request body)
  * @param postData {string} request body
  * @param callback {string} method name (optional)
